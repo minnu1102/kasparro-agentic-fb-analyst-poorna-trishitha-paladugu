@@ -1,0 +1,16 @@
+# Reports Directory
+
+This directory is the output destination for the Agentic Analyst.
+
+## Generated Artifacts
+When you run `python run.py`, the system will generate the following file here:
+
+- **`final_report.json`**: A structured JSON file containing:
+  - The initial user query.
+  - The Data Agent's statistical summary.
+  - The Insight Agent's hypothesis.
+  - The Evaluator's validation results.
+  - The Creative Agent's ad copy suggestions (if applicable).
+
+## Note
+This file is a placeholder to ensure the directory structure is preserved in version control.

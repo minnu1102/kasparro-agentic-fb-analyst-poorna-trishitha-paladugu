@@ -1,0 +1,21 @@
+{
+  "query": "Analyze why ROAS dropped last week",
+  "data_summary": "{\"total_spend\": 30000.0, \"freq_ctr_correlation\": -0.9999999999999999, \"latest_frequency\": 3.52, \"latest_ctr\": 0.0076, \"weekly_trend_sample\": [{\"date\": \"2025-11-25\", \"spend\": 1000, \"impressions\": 50000, \"clicks\": 500, \"frequency\": 3.2, \"revenue\": 75000.0}, {\"date\": \"2025-11-26\", \"spend\": 1000, \"impressions\": 50000, \"clicks\": 470, \"frequency\": 3.28, \"revenue\": 70500.0}, {\"date\": \"2025-11-27\", \"spend\": 1000, \"impressions\": 50000, \"clicks\": 440, \"frequency\": 3.36, \"revenue\": 66000.0}, {\"date\": \"2025-11-28\", \"spend\": 1000, \"impressions\": 50000, \"clicks\": 410, \"frequency\": 3.44, \"revenue\": 61500.0}, {\"date\": \"2025-11-29\", \"spend\": 1000, \"impressions\": 50000, \"clicks\": 380, \"frequency\": 3.52, \"revenue\": 57000.0}]}",
+  "hypothesis": {
+    "hypothesis": "ROAS dropped last week due to Ad Fatigue.",
+    "reasoning": "The data shows a clear pattern of increasing frequency and decreasing CTR. Over the week, the campaign's frequency steadily increased from 3.2 to 3.52, which is above the 2.0 threshold for potential fatigue. Concurrently, the Click-Through Rate (CTR) dropped from 1.0% (500 clicks / 50,000 impressions) to 0.76% (380 clicks / 50,000 impressions). This strong inverse relationship is further confirmed by the `freq_ctr_correlation` of -0.9999999999999999. As the audience saw the ads more often, their engagement decreased, leading to fewer clicks and subsequently lower revenue, while daily spend remained constant at $1000, causing the ROAS to decline from 75 to 57."
+  },
+  "validation": {
+    "is_valid": true,
+    "confidence": 1.0,
+    "critique": "Passed"
+  },
+  "creatives": {
+    "suggestions": [
+      "Stop Trying So Hard. Do This Instead.",
+      "What If Everything You Knew Was Wrong?",
+      "The Secret They Don't Want You To Know"
+    ]
+  },
+  "retry_count": 0
+}
