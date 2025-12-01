@@ -15,12 +15,20 @@ graph TD
     Creative --> Report
     Report --> End([End])
     
-    style Start fill:#f9f,stroke:#333
-    style Data fill:#e1f5fe,stroke:#01579b
-    style Insight fill:#fff9c4,stroke:#fbc02d
-    style Evaluator fill:#f8bbd0,stroke:#880e4f
-    style Creative fill:#c8e6c9,stroke:#2e7d32
-    style Report fill:#e0e0e0,stroke:#333
+    %% Styling for High Contrast
+    classDef default fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
+    classDef dataAgent fill:#e1f5fe,stroke:#01579b,color:#000;
+    classDef insightAgent fill:#fff9c4,stroke:#fbc02d,color:#000;
+    classDef evaluatorAgent fill:#f8bbd0,stroke:#880e4f,color:#000;
+    classDef creativeAgent fill:#c8e6c9,stroke:#2e7d32,color:#000;
+    classDef report fill:#e0e0e0,stroke:#333,color:#000;
+
+    class Start,End default;
+    class Data dataAgent;
+    class Insight insightAgent;
+    class Evaluator evaluatorAgent;
+    class Creative creativeAgent;
+    class Report report;
   ```
 
 
