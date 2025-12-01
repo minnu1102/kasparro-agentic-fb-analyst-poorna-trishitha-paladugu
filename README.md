@@ -1,12 +1,3 @@
-# Kasparro Agentic Facebook Analyst
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Orchestrator](https://img.shields.io/badge/LangGraph-v0.1-purple)
-![AI](https://img.shields.io/badge/OpenAI-GPT--4-green)
-![License](https://img.shields.io/badge/License-MIT-grey)
-
-An autonomous multi-agent system that diagnoses Facebook Ads performance drops, validates hypotheses using statistical evidence, and generates creative solutions.
-
 ## 🏗️ Architecture Diagram
 
 The system uses **LangGraph** to implement a cyclic **Planner-Evaluator-Action** workflow. Unlike linear chains, this system allows for self-correction: if the Evaluator rejects a hypothesis, the Insight Agent is forced to retry with specific feedback.
@@ -30,7 +21,7 @@ graph TD
     style Evaluator fill:#f8bbd0,stroke:#880e4f
     style Creative fill:#c8e6c9,stroke:#2e7d32
     style Report fill:#e0e0e0,stroke:#333
-
+  ```
 
 
 Quick Start:-
